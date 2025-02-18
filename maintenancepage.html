@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance</title>
+    <link rel="icon" type="image/png" href="images/maintenance.png">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            color: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+            width: 450px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        h1 {
+            color: #e63946;
+            font-size: 24px;
+            font-weight: bold;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        p {
+            font-size: 16px;
+            margin: 15px 0;
+            line-height: 1.6;
+            animation: fadeInUp 1.2s ease-in-out;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            color: white;
+            background-color: #1d3557;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+            animation: fadeInUp 1.4s ease-in-out;
+        }
+        .btn:hover {
+            background-color: #457b9d;
+            transform: scale(1.05);
+        }
+        .logo {
+            width: 200px;
+            margin-bottom: 15px;
+            animation: smoothFloat 3s infinite alternate ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes smoothFloat {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/maintenance.png" alt="Logo" class="logo">
+        <h1>🚧 Maintenance in Progress 🚧</h1>
+        <p>We are making some updates to improve your experience. Thank you for your patience.</p>
+        <a href="index.html" class="btn">Return to Homepage</a>
+    </div>
+</body>
+</html>
